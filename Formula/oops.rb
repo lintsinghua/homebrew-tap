@@ -5,21 +5,21 @@
 class Oops < Formula
   desc "Undo and redo file changes made by coding agents"
   homepage "https://github.com/lintsinghua/oops"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lintsinghua/oops/releases/download/v0.1.0/oops_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ebe8a6e4378aa5241d6e0e7359356fb6d7e92e04cd323ea0eca4cb7c1b078ab5"
+      url "https://github.com/lintsinghua/oops/releases/download/v0.1.1/oops_0.1.1_darwin_amd64.tar.gz"
+      sha256 "17d9c90a317b078dff9d5e9d58114f50539278c3a3ebfa7ad80a34999448dcf4"
 
       define_method(:install) do
         bin.install "oops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lintsinghua/oops/releases/download/v0.1.0/oops_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c5e787f55131ff75bb99552668d961c695649195a14c61d9ca22228235275a27"
+      url "https://github.com/lintsinghua/oops/releases/download/v0.1.1/oops_0.1.1_darwin_arm64.tar.gz"
+      sha256 "751da6bea59276e664c025b653508d0918c3faf3e1723da5de194451aa565260"
 
       define_method(:install) do
         bin.install "oops"
@@ -29,15 +29,15 @@ class Oops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lintsinghua/oops/releases/download/v0.1.0/oops_0.1.0_linux_amd64.tar.gz"
-      sha256 "a1c14aaded247d07c064e5f9fd64d9d7f239f644d588d323d329b0c7f6d12951"
+      url "https://github.com/lintsinghua/oops/releases/download/v0.1.1/oops_0.1.1_linux_amd64.tar.gz"
+      sha256 "38dc53c0d1c5fedd620d9a38cf649047148f110d1ac1fb9e65564cdd2be76e22"
       define_method(:install) do
         bin.install "oops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lintsinghua/oops/releases/download/v0.1.0/oops_0.1.0_linux_arm64.tar.gz"
-      sha256 "8c3eca76d79a0db1eed178085f802fe8687ffc0f62b141025bf6d297cb2c01cd"
+      url "https://github.com/lintsinghua/oops/releases/download/v0.1.1/oops_0.1.1_linux_arm64.tar.gz"
+      sha256 "c59f5e05f855927f63c3e86ec6c610f09eaebe01ec90c7f5b4967be5d1adcf3f"
       define_method(:install) do
         bin.install "oops"
       end
